@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Explicitly allow important assets for SEO and page rendering
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.svg$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /*.ico$
+Allow: /*.woff$
+Allow: /*.woff2$
+
+# Disallow URL parameters (except guides with device/client params)
+Disallow: /*?*
+Allow: /guides/*?*
+
+# Sitemap location
+Sitemap: https://weblio.se/sitemap.xml
+
+# Crawl delay to be respectful
+Crawl-delay: 1
